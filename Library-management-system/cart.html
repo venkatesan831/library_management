@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        margin: 0;
+      }
+
+      #bookList {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .bookTitle {
+        font-weight: bold;
+      }
+
+      .author {
+        color: #666;
+      }
+
+      .availability {
+        color: #333;
+      }
+
+      .availabilityCount {
+        font-weight: bold;
+        color: #007bff;
+      }
+
+      .addToCart {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      .addToCart:hover {
+        background-color: #0056b3;
+      }
+
+      #cart {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      #cart h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      #cartItems {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #cartItems li {
+        margin-bottom: 10px;
+      }
+
+      #checkout {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      #checkout:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Book Store</h1>
+
+    <div id="bookList">
+      <h2>Available Books</h2>
+      <ul>
+        <li>
+          <span class="bookTitle">Book 1</span>
+          <span class="author">Author 1</span>
+          <span class="availability"
+            >Availability: <span class="availabilityCount">5</span></span
+          >
+          <button class="addToCart">Add to Cart</button>
+        </li>
+        <li>
+          <span class="bookTitle">Book 2</span>
+          <span class="author">Author 2</span>
+          <span class="availability"
+            >Availability: <span class="availabilityCount">3</span></span
+          >
+          <button class="addToCart">Add to Cart</button>
+        </li>
+        <!-- Add more book items as needed -->
+      </ul>
+    </div>
+
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems"></ul>
+      <button id="checkout">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
